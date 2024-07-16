@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.home-bg {
+    min-height: 100vh;
+    max-height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    position: sticky;
+
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-image: linear-gradient(to right, #c9def4, #f5ccd4, #b8a4c9);
+}
+
+.navbar-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.navbar-heading {
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 4px;
+    padding: 0px;
+}
+
+.navbar-logo-span {
+    color: #ff7a5c;
+}
+
+.navbar-tagline {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 350px;
+    padding: 0px;
+}
+
+.navbar-option {
+    font-size: 17px;
+    font-family: 'Roboto';
+    text-align: center;
+    list-style-type: none;
+    margin-right: 15px;
+    color: white;
+}
+
+.anchor {
+    text-decoration: none;
+    color: blue;
+}
+
+.white-anchor {
+    color: #ffffff;
+}
+
+.anchor:hover {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.white-anchor:hover {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.small-navbar-options {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: black;
+}
+
+
+.home-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.home-intro {
+    background-color: black;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.home-intro-heading {
+    color: #ffffff;
+    font-family: 'Bree Serif';
+    font-size: 50px;
+}
+
+.heading-2 {
+    color: white;
+    font-size: 35px;
+    font-family: "Bree Serif";
+    margin-bottom: 5px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.heading-2-span {
+    color: orange;
+    font-size: 35px;
+    font-family: "Bree Serif";
+}
+
+.intro-name {
+    color: orange;
+    font-size: 50px;
+    font-family: 'Bree Serif';
+}
+
+.home-intro-description {
+    color: aquamarine;
+    font-size: 20px;
+    font-family: 'Roboto';
+    width: 50%;
+    margin-top: 20px;
+}
+
+.about-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.about-inner {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.about-heading {
+    color: orange;
+    font-size: 50px;
+    font-family: 'Bree Serif';
+    margin-bottom: 15px;
+}
+
+.about-heading-span {
+    color: cyan;
+    font-size: 50px;
+    font-family: 'Bree Serif';
+}
+
+.about-1 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+    color: beige;
+}
+
+.about-2 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+    color: beige;
+}
+
+.about-3 {
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+    color: beige;
+}
+
+.about-img {
+    height: 100%;
+    width: 45%;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15%;
+    width: 100%;
+    background-color: black;
+}
+
+.skills-heading {
+    font-size: 40px;
+    font-family: 'Bree Serif';
+    color: lightseagreen;
+    margin-bottom: 10px;
+}
+
+.skills-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 0px 6px 6px rgba(241, 238, 238, 0.75);
+    border-radius: 8px;
+    margin: 20px;
+    width: 20%;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skill-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+}
+
+.skill-name {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-section-heading {
+    font-size: 35px;
+    font-family: 'Bree Serif';
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+
+.project-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: #4b484b;
+    padding: 18px;
+    width: 45%;
+    margin: 10px;
+}
+
+.project-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 12px;
+}
+
+.project-name {
+    color: orange;
+    font-size: 25px;
+    font-family: 'Bree Serif';
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    font-family: 'Roboto';
+    color: aqua;
+    font-size: 20px;
+}
+
+.project-link {
+    color: pink;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.technologies-text {
+    color: greenyellow;
+    font-size: 25px;
+    font-family: 'Bree Serif';
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.project-technologies {
+    font-size: 25px;
+    font-family: 'Bree Serif';
+    color: gold;
+}
+
+.contact-me-section {
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-heading {
+    color: orange;
+    font-size: 35px;
+    font-family: 'Bree Serif';
+    margin-bottom: 8px;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+}
+
+.contact-item {
+    list-style-type: none;
+    margin: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Roboto';
+}
+
+.copy-right-container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.copy-right-text {
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .small-navbar-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 0px;
+        margin-left: auto;
+        margin-top: 0px;
+        background-color: black;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .menu-button {
+        display: block;
+        height: 35px;
+        width: 35px;
+        border-width: 0px;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .navbar-options {
+        display: none;
+    }
+
+    .navbar-option {
+        margin-bottom: 5px;
+        color: #ffffff;
+        border-width: 1px;
+        border-style: dashed;
+        width: 100%;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+
+    .home-intro-heading {
+        font-size: 30px;
+    }
+
+    .intro-name {
+        font-size: 30px;
+    }
+
+    .home-intro-description {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .about-inner {
+        width: 100%;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .skills-section {
+        padding: 10px;
+    }
+
+    .skills-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .skill-card {
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .contact-heading {
+        align-self: center;
+    }
+
+    .contact-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

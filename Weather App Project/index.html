@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="main-bg-1" id="bg1">
+      <div class="search-container">
+        <input
+          type="search"
+          class="input-style"
+          placeholder="Enter city name"
+          id="cityInput"
+        />
+        <button
+          class="search-button"
+          id="searchButton"
+          type="button"
+          onclick="searchWeather()"
+        >
+          <img
+            src="https://res.cloudinary.com/daxizvsge/image/upload/v1713090334/search_ix8sri.png"
+            alt="search"
+            class="search-img"
+          />
+        </button>
+      </div>
+      <img
+        class="weather-img"
+        src="https://res.cloudinary.com/daxizvsge/image/upload/v1713090334/mist_ccedzu.png"
+        alt="resultImg"
+        id="resultImg"
+      />
+      <h1 class="temparature" id="temparature"></h1>
+      <p class="city" id="city"></p>
+
+      <div class="end-container">
+        <div class="end-1">
+          <img
+            src="https://res.cloudinary.com/daxizvsge/image/upload/v1713090334/humidity_syeo6i.png"
+            alt="humidity"
+            class="humidity-img"
+          />
+          <div class="end-inner">
+            <p class="humidity-result" id="humidityResult"></p>
+            <p class="humidity-text">Humidity</p>
+          </div>
+        </div>
+
+        <div class="end-2">
+          <img
+            src="https://res.cloudinary.com/daxizvsge/image/upload/v1713090335/wind_b2nkb2.png"
+            alt="windspeed"
+            class="windspeed-img"
+          />
+          <div class="end-inner">
+            <p class="windspeed-result" id="windSpeedResult"></p>
+            <p class="windspeed-text">windspeed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-bg-2" id="bg2">
+      <div class="not-found-container">
+        <img
+          src="https://res.cloudinary.com/daxizvsge/image/upload/v1713097285/oops_rossk0.jpg"
+          alt="notfound"
+          class="not-found-img"
+        />
+        <p class="not-found-msg">
+          City not found, Please try with some other city.
+        </p>
+        <button class="retry-button" id="retryButton">Retry</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
